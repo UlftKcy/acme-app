@@ -1,11 +1,13 @@
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 .brand-name {
-  color: #ffff;
+  color: #f0b90b;
   font-size: 1.3rem;
+  font-weight: bolder;
+  letter-spacing: 2px;
 }
 .navbar-nav {
   display: flex;
@@ -20,18 +22,18 @@
   opacity: 0.8;
 }
 .btn-hamburger {
-  display: none;
-  background-color: transparent;
-  border: 0;
-  color: #ffff;
-  font-size: 1.5rem;
-}
-
-@media screen and (max-width: 768px) {
-  .navbar-nav {
     display: none;
+    background-color: transparent;
+     border: 0;
+     color: #ffff;
+     font-size: 1.5rem;
   }
-  .btn-hamburger {
-    display: block;
+
+  @media screen and (max-width: 768px) {
+    .navbar-nav{
+        display: none;
+    }
+    .btn-hamburger {
+      display: block;
+    }
   }
-}

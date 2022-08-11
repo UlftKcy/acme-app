@@ -23,7 +23,7 @@ const Navbar = () => {
         </ul>
       </div>
       <button className="btn-hamburger">
-        <i class="fa-solid fa-bars"></i>
+        <i className="fa-solid fa-bars"></i>
       </button>
     </nav>
   );

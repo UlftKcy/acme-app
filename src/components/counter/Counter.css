@@ -1,0 +1,30 @@
+.counter-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1E2026;
+  min-width: 30vw;
+  min-height: 200px;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.counter-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 75%;
+}
+.btn {
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  color: #68717D;
+}
+.counter-value {
+  font-size: 2rem;
+  margin: 8px 0;
+  color: #B7BBBF;
+}
+.colon-icon {
+  font-size: 2rem;
+}

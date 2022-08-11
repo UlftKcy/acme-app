@@ -1,0 +1,30 @@
+.bitcoin-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #c4990e;
+  min-width: 30vw;
+  min-height: 200px;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+.bitcoin-header {
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+.bitcoin-price-wrapper {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.bitcoin-currency-selection{
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    background-color: #1E2026;
+    color:#ffff;
+    padding: 5px 10px;
+}

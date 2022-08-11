@@ -4,3 +4,12 @@
   margin-left: auto;
   padding: 2rem;
 }
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem;
+  min-height: 75vh;
+}
