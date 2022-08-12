@@ -5,11 +5,12 @@ import apiClient from "../../api/Bitcoin";
 
 const BitcoinPrice = () => {
   const [btcPrice, setBtcPrice] = useState(0.0);
-  const [priceLastUpdated, setPriceLastUpdated] = useState(null);
+  /* const [priceLastUpdated, setPriceLastUpdated] = useState(null); */
   const currencyRef = useRef(options[0].value);
 
   useEffect(() => {
-    fetchBitcoinPrice(currencyRef.current.value);
+    const request = setInterval(async () => await fetchBitcoinPrice(currencyRef.current.value), 3000);
+    return () => clearInterval(request);
   }, []);
 
   const fetchBitcoinPrice = async (currency) => {
@@ -23,13 +24,14 @@ const BitcoinPrice = () => {
         setBtcPrice(data.bpi.EUR.rate);
       }
       
-      setPriceLastUpdated(data.time.updated);
+      /* setPriceLastUpdated(data.time.updated); */
     } catch (error) {
       throw new Error("Something went wrong!", { cause: error });
     }
   };
   const handleCurrency = ()=>{
-    fetchBitcoinPrice(currencyRef.current.value);
+    const currencyValue = currencyRef.current.value;
+    fetchBitcoinPrice(currencyValue);
   }
 
   return (
