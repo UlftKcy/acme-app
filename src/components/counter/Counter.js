@@ -34,7 +34,7 @@ const Counter = () => {
         if (minutes === 0) {
           setSeconds(59);
           setMinutes(59);
-          setHours(hours - 1)
+          return hours > 0 ? setHours(hours - 1) : setHours(9);
         } else {
           let seconds = 59;
           setSeconds(seconds);
@@ -63,7 +63,6 @@ const Counter = () => {
 
         <button className='btn' onClick={incrementMinutes}><i className="fa-solid fa-arrow-up"></i></button>
         <span className='counter-value'>{currentMinutes}</span>
-        {/*  <span className='counter-value' ref={minuteRef}>{minuteRef.current.toString().padStart(2, '0')}</span> */}
         <button className='btn' onClick={decrementMinutes}><i className="fa-solid fa-arrow-down"></i></button>
       </div>
       <span className='colon-icon'>:</span>

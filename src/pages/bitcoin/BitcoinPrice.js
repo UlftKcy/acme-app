@@ -6,7 +6,6 @@ import LoadingSpinner from "../../components/loading/LoadingSpinner";
 
 const BitcoinPrice = () => {
   const [btcPrice, setBtcPrice] = useState(0.0);
-  /* const [priceLastUpdated, setPriceLastUpdated] = useState(null); */
   const currencyRef = useRef(options[0].value);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -54,14 +53,12 @@ const BitcoinPrice = () => {
             ref={currencyRef}
             onChange={handleCurrency}
           >
-            {React.Children.toArray(
-              options.map((option) => (
-                <option key={option.label} value={option.value}>
-                  {option.label}
-                </option>
-              ))
-            )}
-            ;
+            {React.Children.toArray(options.map((option) => (
+              <option key={option.label} value={option.value}>
+                {option.label}
+              </option>
+            ))
+            )};
           </select>
         </div>
         <div className="bitcoin-price-wrapper">
@@ -73,6 +70,7 @@ const BitcoinPrice = () => {
         </div>
       </div>
     </div>
+
   );
 };
 

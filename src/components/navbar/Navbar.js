@@ -2,16 +2,12 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useToggle } from "../../utils/hooks/useToggle";
 import Sidebar from "../Sidebar/Sidebar";
+import { navbarLinks } from "../../constants/index";
 import "./Navbar.css";
 
 const Navbar = () => {
   let navigate = useNavigate();
   const [state, toggle] = useToggle(false);
-
-  const navbarLinks = [
-    { id: 1, name: "Counter", path: "/" },
-    { id: 2, name: "Bitcoin", path: "/bitcoin-price" },
-  ];
 
   return (
     <>
@@ -32,7 +28,6 @@ const Navbar = () => {
           <button onClick={toggle} className="btn-hamburger">
             <i className="fa-solid fa-bars"></i>
           </button>
-
         </nav>
         ) : (
           <Sidebar />

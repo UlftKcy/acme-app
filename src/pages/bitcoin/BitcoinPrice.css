@@ -8,22 +8,26 @@
   padding: 1rem;
   border-radius: 10px;
 }
+
 @media only screen and (max-width: 600px) {
   .bitcoin-wrapper {
     width: 90%;
   }
 }
+
 .bitcoin-header {
   font-size: 1.8rem;
   font-weight: 600;
   display: flex;
   justify-content: space-between;
 }
+
 .bitcoin-price-wrapper {
   text-align: center;
   font-size: 2.2rem;
   font-weight: bold;
 }
+
 .bitcoin-currency-selection {
   border: 0;
   outline: none;
@@ -32,6 +36,7 @@
   color: #ffff;
   padding: 5px 10px;
 }
-.bitcoin-price{
+
+.bitcoin-price {
   font-size: 2rem;
 }
