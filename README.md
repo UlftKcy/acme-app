@@ -3,7 +3,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://acme-app-one.vercel.app/" target="_blank">
+    <a href="https://acme-app-one.vercel.app/">
       Project
     </a>
   </h3>
