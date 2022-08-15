@@ -23,7 +23,7 @@
 
 ## Overview
 
--ACME consists of an internal tool where Bitcoin prices can be monitored in USD, GBP and Euros, and a live counter on the dashboard.
+- ACME consists of an internal tool where Bitcoin prices can be monitored in USD, GBP and Euros, and a live counter on the dashboard.
 
 ### Built With
 
@@ -38,10 +38,9 @@
 # Clone this repository
 $ git clone https://github.com/UlftKcy/acme-app.git
 # Install dependencies
-    $ npm install
+  $ npm install
 # Run the app
-$ npm start
-```
+  $ npm start
 
 ## Contact
 
