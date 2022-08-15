@@ -7,10 +7,14 @@
   min-height: 200px;
   padding: 1rem;
   border-radius: 10px;
-  margin: 1rem 0;
+}
+@media only screen and (max-width: 600px) {
+  .bitcoin-wrapper {
+    width: 90%;
+  }
 }
 .bitcoin-header {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   display: flex;
   justify-content: space-between;
@@ -20,11 +24,14 @@
   font-size: 2.2rem;
   font-weight: bold;
 }
-.bitcoin-currency-selection{
-    border: 0;
-    outline: none;
-    border-radius: 5px;
-    background-color: #1E2026;
-    color:#ffff;
-    padding: 5px 10px;
+.bitcoin-currency-selection {
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  background-color: #1e2026;
+  color: #ffff;
+  padding: 5px 10px;
+}
+.bitcoin-price{
+  font-size: 2rem;
 }

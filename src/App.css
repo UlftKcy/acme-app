@@ -2,7 +2,7 @@
   max-width: 90%;
   margin-right: auto;
   margin-left: auto;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 .container{
@@ -10,6 +10,5 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 2rem;
   min-height: 75vh;
 }

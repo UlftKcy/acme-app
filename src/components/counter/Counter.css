@@ -2,11 +2,16 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #1E2026;
+  background-color: #1e2026;
   min-width: 30vw;
   min-height: 200px;
   padding: 1rem;
   border-radius: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .counter-wrapper {
+    width: 90%;
+  }
 }
 .counter-item {
   display: flex;
@@ -18,12 +23,12 @@
 .btn {
   padding: 0.7rem 1rem;
   cursor: pointer;
-  color: #68717D;
+  color: #68717d;
 }
 .counter-value {
   font-size: 2rem;
   margin: 8px 0;
-  color: #B7BBBF;
+  color: #b7bbbf;
 }
 .colon-icon {
   font-size: 2rem;

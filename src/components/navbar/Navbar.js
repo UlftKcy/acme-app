@@ -1,31 +1,43 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { useToggle } from "../../utils/hooks/useToggle";
+import Sidebar from "../Sidebar/Sidebar";
 import "./Navbar.css";
 
 const Navbar = () => {
   let navigate = useNavigate();
+  const [state, toggle] = useToggle(false);
+
   const navbarLinks = [
-    { id: 1, name: "Counter" },
-    { id: 2, name: "Bitcoin" },
+    { id: 1, name: "Counter", path: "/" },
+    { id: 2, name: "Bitcoin", path: "/bitcoin-price" },
   ];
+
   return (
-    <nav className="navbar">
-      <a onClick={() => navigate("/")} className="brand-name">
-        ACME
-      </a>
-      <div className="nav-menü">
-        <ul className="navbar-nav">
-          {navbarLinks.map((link) => (
-            <li className="nav-item" key={link.id}>
-              <a className="nav-link">{link.name}</a>
-            </li>
-          ))}
-        </ul>
-      </div>
-      <button className="btn-hamburger">
-        <i className="fa-solid fa-bars"></i>
-      </button>
-    </nav>
+    <>
+      {!state ?
+        (<nav className="navbar">
+          <a onClick={() => navigate("/")} className="brand-name">
+            ACME
+          </a>
+          <div className="nav-menü">
+            <ul className="navbar-nav">
+              {React.Children.toArray(navbarLinks.map((link) => (
+                <li className="nav-item" key={link.id}>
+                  <a onClick={() => navigate(link.path)} className="nav-link">{link.name}</a>
+                </li>
+              )))}
+            </ul>
+          </div>
+          <button onClick={toggle} className="btn-hamburger">
+            <i className="fa-solid fa-bars"></i>
+          </button>
+
+        </nav>
+        ) : (
+          <Sidebar />
+        )}
+    </>
   );
 };
 

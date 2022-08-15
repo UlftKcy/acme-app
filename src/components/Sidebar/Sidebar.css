@@ -1,0 +1,28 @@
+.sidebar-wrapper{
+    position:absolute;
+    left:0;
+    top:0;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    background-color:#CFCFCF;
+    color:black; 
+}
+.sidebar-menu{
+    display:flex;
+    flex-direction:column; 
+}
+
+.close-sidebar{
+    background-color:transparent;
+    border:0;
+    padding:2rem;
+}
+.sidebar-item{
+    list-style-type:none;
+    padding:5px 3rem;
+    font-weight: 600;
+}
+.sidebar-item:hover{
+    color: #c4990e;;
+}
