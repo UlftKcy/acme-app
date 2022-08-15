@@ -45,4 +45,4 @@ $ git clone https://github.com/UlftKcy/acme-app.git
 ## Contact
 
 - GitHub [@UlftKcy](https://github.com/UlftKcy)
-- Linkedin [@ülfet-kacay](https://www.linkedin.com/in/%C3%BClfet-kacay/)
+- Linkedin [@ülfet-kacay](https://www.linkedin.com/in/ulfet-kacay/)
